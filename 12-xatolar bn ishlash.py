@@ -1,6 +1,6 @@
-# Syntax Error
-# print ("Hello World")
-# print("Hello world)
+# Syntax Error.
+print ("Hello World")
+print("Hello world)
 
 son=int(input("son kiriting: "))
 print(f"{son} ning kvadrati {son**2} ga teng")
