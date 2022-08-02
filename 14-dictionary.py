@@ -40,10 +40,12 @@ telefonlar={
     'karim':'mi 5+',
     'anvar':'nokia 1202'
 }
-print(telefonlar['ali'])
+# print(telefonlar['ali'])
 
-phone=telefonlar.get('hasan', 'Hasanda telefon yo\'q')
-print(phone)
+# phone=telefonlar.get('hasan', 'Hasanda telefon yo\'q')
+# print(phone)
+
+print(telefonlar.get('ali'))
 
 
 
