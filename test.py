@@ -29,89 +29,176 @@
 
 # turtle.mainloop()
 
-from asyncore import write
-import turtle
+# from asyncore import write
+# import turtle
 
-turtle.Screen().bgcolor("black")
+# turtle.Screen().bgcolor("black")
 
-t=turtle.Turtle()
-t.speed(10)
-t.pensize(10)
-t.penup()
+# t=turtle.Turtle()
+# t.speed(10)
+# t.pensize(10)
+# t.penup()
 
-def draw_circle():
-    t.setposition(0,-280)
-    t.pendown()
-    t.begin_fill()
-    t.color('red')
-    t.pencolor("white")
-    t.circle(300)
-    t.end_fill()
-    t.penup()
+# def draw_circle():
+#     t.setposition(0,-280)
+#     t.pendown()
+#     t.begin_fill()
+#     t.color('red')
+#     t.pencolor("white")
+#     t.circle(300)
+#     t.end_fill()
+#     t.penup()
 
-def draw_circle2():
-    t.pensize(2)
-    t.setposition(0,-230)
-    t.pendown()
-    t.begin_fill()
-    t.color('black')
-    t.circle(250)
-    t.end_fill()
-    t.penup()
+# def draw_circle2():
+#     t.pensize(2)
+#     t.setposition(0,-230)
+#     t.pendown()
+#     t.begin_fill()
+#     t.color('black')
+#     t.circle(250)
+#     t.end_fill()
+#     t.penup()
 
-def draw_A():
-    t.setposition(30,-110)
-    t.pendown()
-    t.begin_fill()
-    t.color('red')
-    t.pensize(10)
-    t.pencolor("white")
-    t.forward(23)
-    t.backward(123)
-    t.left(60)
-    t.backward(220)
-    t.right(60)
-    t.backward(100)
-    t.right(117)
-    t.backward(710)
-    t.right(63)
-    t.backward(110)
-    t.right(90)
-    t.backward(510)
-    t.right(90)
-    t.backward(100)
-    t.right(90)
-    t.backward(70)
-    t.end_fill()
-    t.penup()
+# def draw_A():
+#     t.setposition(30,-110)
+#     t.pendown()
+#     t.begin_fill()
+#     t.color('red')
+#     t.pensize(10)
+#     t.pencolor("white")
+#     t.forward(23)
+#     t.backward(123)
+#     t.left(60)
+#     t.backward(220)
+#     t.right(60)
+#     t.backward(100)
+#     t.right(117)
+#     t.backward(710)
+#     t.right(63)
+#     t.backward(110)
+#     t.right(90)
+#     t.backward(510)
+#     t.right(90)
+#     t.backward(100)
+#     t.right(90)
+#     t.backward(70)
+#     t.end_fill()
+#     t.penup()
 
-def draw_triangle():
-    t.pensize(10)
-    t.setposition(53,-40)
-    t.pendown()
-    t.begin_fill()
-    t.color("black")
-    t.pencolor("white")
-    t.right(90)
-    t.forward(100)
-    t.right(115)
-    t.forward(250)
-    t.right(157)
-    t.forward(227)
-    t.end_fill()
+# def draw_triangle():
+#     t.pensize(10)
+#     t.setposition(53,-40)
+#     t.pendown()
+#     t.begin_fill()
+#     t.color("black")
+#     t.pencolor("white")
+#     t.right(90)
+#     t.forward(100)
+#     t.right(115)
+#     t.forward(250)
+#     t.right(157)
+#     t.forward(227)
+#     t.end_fill()
 
-def draw_arrow():
-    t.backward(80)
-    t.left(42)
-    t.forward(147)
-    t.right(83)
-    t.forward(140)
+# def draw_arrow():
+#     t.backward(80)
+#     t.left(42)
+#     t.forward(147)
+#     t.right(83)
+#     t.forward(140)
 
-draw_circle()
-draw_circle2()
-draw_A()
-draw_triangle()
-draw_arrow()
+# draw_circle()
+# draw_circle2()
+# draw_A()
+# draw_triangle()
+# draw_arrow()
 
-t.hideturtle()
-turtle.done()
+# t.hideturtle()
+# turtle.done()
+
+
+from datetime import datetime
+from distutils.command.config import config
+from tkinter import *
+
+oyna=Tk()
+oyna.title("Dasturcha :)")
+oyna.geometry('300x300')
+
+natija=Label(text='Natija', bg='white')
+natija.place(x=90, y=135, width=120, height=40)
+
+yil=Entry()
+yil.place(x=75, y=50, width=150, height=30)
+
+def farq():
+    bugun=datetime.today()
+    natija.config(text=bugun.year-int(yil.get()))
+
+tugma=Button(text='Hisoblash', command=farq)
+tugma.place(x=90, y=90, width=120, height=40)
+
+oyna.mainloop()
+
+
+
+
+
+
+
+
+
+
+# def farq(yil):
+#     bugun=datetime.today()
+#     natija=bugun.year-int(yil)
+#     return natija
+
+# tugilgan_yil=input("Tug`ilgan yilni kiriting: ")
+# natija_f=farq(tugilgan_yil)
+# print(natija_f)
+
+
+
+
+# maktab_yil=int(input("Bitirgan yilni kiriting: "))
+# natija=bugun.year-maktab_yil
+
+# print(natija)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
