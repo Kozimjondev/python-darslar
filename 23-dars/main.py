@@ -21,7 +21,7 @@
 # import math
 # print(math.log2(8))
 
-import random as r
+# import random as r
 # son=r.randint(0,100)
 # print(son)
 
@@ -34,10 +34,14 @@ import random as r
 # print(x)
 # print(r.choice(x))
 
-x=list(range(11))
-print(x)
-r.shuffle(x)
-print(x)
+# x=list(range(11))
+# print(x)
+# r.shuffle(x)
+# print(x)
+
+import random
+from uzwords import words
+print(words[0])
 
 
 
